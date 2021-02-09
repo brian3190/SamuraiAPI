@@ -26,8 +26,8 @@
       "SamuraiAPI/1.0.0": {
         "dependencies": {
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "5.0.0",
-          "SamuraiApp.Data": "1.0.0",
-          "SamuraiApp.Domain": "1.0.0",
+          "SamuraiAPI.Data": "1.0.0",
+          "SamuraiAPI.Domain": "1.0.0",
           "Microsoft.AspNetCore.Antiforgery": "5.0.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "5.0.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "5.0.0.0",
@@ -731,6 +731,20 @@
         }
       },
       "Microsoft.EntityFrameworkCore.Analyzers/5.0.0": {},
+      "Microsoft.EntityFrameworkCore.InMemory/5.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "5.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.1/Microsoft.EntityFrameworkCore.InMemory.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.20.52303"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.1/Microsoft.EntityFrameworkCore.InMemory.dll": {}
+        }
+      },
       "Microsoft.EntityFrameworkCore.Relational/5.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "5.0.0",
@@ -2083,24 +2097,25 @@
           "System.Xml.XmlDocument": "4.3.0"
         }
       },
-      "SamuraiApp.Data/1.0.0": {
+      "SamuraiAPI.Data/1.0.0": {
         "dependencies": {
+          "Microsoft.EntityFrameworkCore.InMemory": "5.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.0",
-          "SamuraiApp.Domain": "1.0.0"
+          "SamuraiAPI.Domain": "1.0.0"
         },
         "runtime": {
-          "SamuraiApp.Data.dll": {}
+          "SamuraiAPI.Data.dll": {}
         },
         "compile": {
-          "SamuraiApp.Data.dll": {}
+          "SamuraiAPI.Data.dll": {}
         }
       },
-      "SamuraiApp.Domain/1.0.0": {
+      "SamuraiAPI.Domain/1.0.0": {
         "runtime": {
-          "SamuraiApp.Domain.dll": {}
+          "SamuraiAPI.Domain.dll": {}
         },
         "compile": {
-          "SamuraiApp.Domain.dll": {}
+          "SamuraiAPI.Domain.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/5.0.0.0": {
@@ -3935,6 +3950,13 @@
       "path": "microsoft.entityframeworkcore.analyzers/5.0.0",
       "hashPath": "microsoft.entityframeworkcore.analyzers.5.0.0.nupkg.sha512"
     },
+    "Microsoft.EntityFrameworkCore.InMemory/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-4p98EdOJXs56nr7N+UjKvwEhAMs0uiJnJjXFSgpiaq9ZbAa5PEMklC0Q6yDEg6I5B4/GvVgb5vMhjn6P2t15Bg==",
+      "path": "microsoft.entityframeworkcore.inmemory/5.0.0",
+      "hashPath": "microsoft.entityframeworkcore.inmemory.5.0.0.nupkg.sha512"
+    },
     "Microsoft.EntityFrameworkCore.Relational/5.0.0": {
       "type": "package",
       "serviceable": true,
@@ -4894,12 +4916,12 @@
       "path": "system.xml.xmlserializer/4.3.0",
       "hashPath": "system.xml.xmlserializer.4.3.0.nupkg.sha512"
     },
-    "SamuraiApp.Data/1.0.0": {
+    "SamuraiAPI.Data/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "SamuraiApp.Domain/1.0.0": {
+    "SamuraiAPI.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

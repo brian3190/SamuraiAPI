@@ -9,8 +9,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\SamuraiApp\SamuraiApp.Data\SamuraiApp.Data.csproj" />
-    <ProjectReference Include="..\..\SamuraiApp\SamuraiApp.Domain\SamuraiApp.Domain.csproj" />
+    <ProjectReference Include="..\SamuraiAPI.Data\SamuraiAPI.Data.csproj" />
+    <ProjectReference Include="..\SamuraiAPI.Domain\SamuraiAPI.Domain.csproj" />
   </ItemGroup>
 
 </Project>

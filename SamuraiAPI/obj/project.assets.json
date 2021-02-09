@@ -426,6 +426,18 @@
           "lib/netstandard2.0/_._": {}
         }
       },
+      "Microsoft.EntityFrameworkCore.InMemory/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "5.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.1/Microsoft.EntityFrameworkCore.InMemory.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/Microsoft.EntityFrameworkCore.InMemory.dll": {}
+        }
+      },
       "Microsoft.EntityFrameworkCore.Relational/5.0.0": {
         "type": "package",
         "dependencies": {
@@ -2591,28 +2603,29 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "SamuraiApp.Data/1.0.0": {
+      "SamuraiAPI.Data/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
+          "Microsoft.EntityFrameworkCore.InMemory": "5.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.0",
-          "SamuraiApp.Domain": "1.0.0"
+          "SamuraiAPI.Domain": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/SamuraiApp.Data.dll": {}
+          "bin/placeholder/SamuraiAPI.Data.dll": {}
         },
         "runtime": {
-          "bin/placeholder/SamuraiApp.Data.dll": {}
+          "bin/placeholder/SamuraiAPI.Data.dll": {}
         }
       },
-      "SamuraiApp.Domain/1.0.0": {
+      "SamuraiAPI.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "compile": {
-          "bin/placeholder/SamuraiApp.Domain.dll": {}
+          "bin/placeholder/SamuraiAPI.Domain.dll": {}
         },
         "runtime": {
-          "bin/placeholder/SamuraiApp.Domain.dll": {}
+          "bin/placeholder/SamuraiAPI.Domain.dll": {}
         }
       }
     }
@@ -3191,6 +3204,20 @@
         "lib/netstandard2.0/_._",
         "microsoft.entityframeworkcore.analyzers.5.0.0.nupkg.sha512",
         "microsoft.entityframeworkcore.analyzers.nuspec"
+      ]
+    },
+    "Microsoft.EntityFrameworkCore.InMemory/5.0.0": {
+      "sha512": "4p98EdOJXs56nr7N+UjKvwEhAMs0uiJnJjXFSgpiaq9ZbAa5PEMklC0Q6yDEg6I5B4/GvVgb5vMhjn6P2t15Bg==",
+      "type": "package",
+      "path": "microsoft.entityframeworkcore.inmemory/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/netstandard2.1/Microsoft.EntityFrameworkCore.InMemory.dll",
+        "lib/netstandard2.1/Microsoft.EntityFrameworkCore.InMemory.xml",
+        "microsoft.entityframeworkcore.inmemory.5.0.0.nupkg.sha512",
+        "microsoft.entityframeworkcore.inmemory.nuspec"
       ]
     },
     "Microsoft.EntityFrameworkCore.Relational/5.0.0": {
@@ -8658,22 +8685,22 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
-    "SamuraiApp.Data/1.0.0": {
+    "SamuraiAPI.Data/1.0.0": {
       "type": "project",
-      "path": "../../SamuraiApp/SamuraiApp.Data/SamuraiApp.Data.csproj",
-      "msbuildProject": "../../SamuraiApp/SamuraiApp.Data/SamuraiApp.Data.csproj"
+      "path": "../SamuraiAPI.Data/SamuraiAPI.Data.csproj",
+      "msbuildProject": "../SamuraiAPI.Data/SamuraiAPI.Data.csproj"
     },
-    "SamuraiApp.Domain/1.0.0": {
+    "SamuraiAPI.Domain/1.0.0": {
       "type": "project",
-      "path": "../../SamuraiApp/SamuraiApp.Domain/SamuraiApp.Domain.csproj",
-      "msbuildProject": "../../SamuraiApp/SamuraiApp.Domain/SamuraiApp.Domain.csproj"
+      "path": "../SamuraiAPI.Domain/SamuraiAPI.Domain.csproj",
+      "msbuildProject": "../SamuraiAPI.Domain/SamuraiAPI.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 5.0.0",
-      "SamuraiApp.Data >= 1.0.0",
-      "SamuraiApp.Domain >= 1.0.0"
+      "SamuraiAPI.Data >= 1.0.0",
+      "SamuraiAPI.Domain >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -8703,11 +8730,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\User\\Desktop\\SamuraiApp\\SamuraiApp.Data\\SamuraiApp.Data.csproj": {
-              "projectPath": "C:\\Users\\User\\Desktop\\SamuraiApp\\SamuraiApp.Data\\SamuraiApp.Data.csproj"
+            "C:\\Users\\User\\Desktop\\SamuraiAPI\\SamuraiAPI.Data\\SamuraiAPI.Data.csproj": {
+              "projectPath": "C:\\Users\\User\\Desktop\\SamuraiAPI\\SamuraiAPI.Data\\SamuraiAPI.Data.csproj"
             },
-            "C:\\Users\\User\\Desktop\\SamuraiApp\\SamuraiApp.Domain\\SamuraiApp.Domain.csproj": {
-              "projectPath": "C:\\Users\\User\\Desktop\\SamuraiApp\\SamuraiApp.Domain\\SamuraiApp.Domain.csproj"
+            "C:\\Users\\User\\Desktop\\SamuraiAPI\\SamuraiAPI.Domain\\SamuraiAPI.Domain.csproj": {
+              "projectPath": "C:\\Users\\User\\Desktop\\SamuraiAPI\\SamuraiAPI.Domain\\SamuraiAPI.Domain.csproj"
             }
           }
         }

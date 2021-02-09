@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "3j2BgaZx5s9g9aWDV5OQJ3462b5ANaIlIfyqgBm+JjNUtbEF3WCM6c1BSJKTk6eHm8pNQIHMnbbmSe6CIJglZA==",
+  "dgSpecHash": "ZLlBHFAENunFPQcKypUxjNEBncsGSiIo2BgH6zdGo1PqHSaAZ5pdwPzWjr8bXVpB0rlrBoRSI3ZYw2svpaevBw==",
   "success": true,
   "projectFilePath": "C:\\Users\\User\\Desktop\\SamuraiAPI\\SamuraiAPI\\SamuraiAPI.csproj",
   "expectedPackageFiles": [
@@ -22,6 +22,7 @@
     "C:\\Users\\User\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.0\\microsoft.entityframeworkcore.5.0.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.0\\microsoft.entityframeworkcore.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\5.0.0\\microsoft.entityframeworkcore.analyzers.5.0.0.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\microsoft.entityframeworkcore.inmemory\\5.0.0\\microsoft.entityframeworkcore.inmemory.5.0.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\5.0.0\\microsoft.entityframeworkcore.relational.5.0.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\5.0.0\\microsoft.entityframeworkcore.sqlserver.5.0.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\5.0.0\\microsoft.extensions.caching.abstractions.5.0.0.nupkg.sha512",
