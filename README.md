@@ -1,2 +1,2 @@
 # SamuraiAPI
-ASP.NET Web API with EFCore LocalDB - Julie Lerman
+ASP.NET Core Web API with EFCore LocalDB - Julie Lerman
